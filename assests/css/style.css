@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+h6 {
+    color: #D8D8D8;
+}
+
+
+
+button {
+    font-size: 0.8rem;
+    font-weight:700;
+    outline: none;
+    border: none;
+   
+    color: #c9bd19;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color:  #111111;
+}
+.navbar {
+    font-size: 16px;
+    background-color: black;
+}
+
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: #c9bd19;
+    transition: 0.2s ease;
+    font-weight: 700;
+
+}
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-collapse .navbar-nav .nav-link:active,
+.navbar i:active {
+    color: white;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: #c9bd19;
+}
+
+#logo {
+    color: white;
+    text-align: center;
+}
+
+#logo span{
+    color: #c9bd19;
+    
+}
+
+
+
+#home span{
+    color: #c9bd19;
+}
+
+#home {
+    background-repeat: no-repeat;
+    background-position: center  right;
+    height: 100vh;
+    position: relative;
+    max-width: 89%;
+}
+
+#home .banner{
+    position: relative;
+    top: 14rem;
+    left: 4rem;
+    display: flex;
+}
+
+#home .banner:nth-child(1) img{
+    position: absolute;
+    right: -5.5rem;
+}
+
+
+#home .barra-horizontal {
+    width: 99vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .barra-horizontal img {
+    width: 100px;
+    
+}
+
+
+
+/*nav mobile*/
+@media only screen and (max-width:991px) {
+    #navbarSupportedContent > ul{
+        margin: -1rem;
+        margin-top: 0;
+        display: flex;
+        align-items: flex-end;
+        
+    }
+    #home {
+        position: relative;
+        left: -4rem;
+    }
+
+    #home .banner h1, h5, p, .home-bg {
+        display: none;
+    }
+
+    #home .banner{
+        position: relative;
+        top: 12rem;
+        
+    }
+
+    #home .banner button{
+        position: absolute;
+        top: -5rem;
+        font-size: 10px;
+    }
+
+    .home-mobile{
+        width: 600px;
+        height: 80vh;
+        background-image: url("/assests/img/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #home .banner .home-bg {
+     position: relative;
+     left: 10rem;
+        
+    }
+
+    #home .barra-horizontal {
+        position: relative;
+        left: 4rem;
+        bottom: -9rem;
+    }
+
+    #ofertas{
+        padding-top: 35px;
+    }
+
+}
